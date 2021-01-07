@@ -6,8 +6,6 @@ import { ProgressEncouragement } from './components/ProgressEncouragement'
 import { useCounter } from './useCounter'
 import { useNumState } from './useNumState'
 
-// TODO: Add clear button that busts local storage
-
 function App() {
   const [cupSize, setCupSize] = useNumState('cup-size', 16)
   const [goal, setGoal] = useNumState('goal', 80)
@@ -20,7 +18,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="h-screen fixed w-full bg-wave-background bg-cover">
       <div className="flex justify-end my-6 mx-6">
         <button
           className="rounded-full uppercase tracking-wide font-semibold bg-gray-100 text-gray-600 px-12 py-3"
@@ -29,8 +27,8 @@ function App() {
           Clear
         </button>
       </div>
-      <div className="bg-gray-white h-full py-48">
-        <div className="flex flex-col items-center max-w-lg m-auto">
+      <div className="pt-32">
+        <div className="flex flex-col items-center max-w-lg m-auto ">
           <h1 className="text-6xl font-black text-black pb-2">
             Stay Hydrated.
           </h1>
