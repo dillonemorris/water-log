@@ -18,21 +18,21 @@ function App() {
   }
 
   return (
-    <div className="h-screen fixed w-full bg-wave-background bg-cover">
-      <div className="flex justify-end my-6 mx-6">
+    <div className="h-screen fixed w-full bg-wave-background bg-cover px-2">
+      <div className="flex justify-end my-3 lg:my-6 mx-1 lg:mx-6">
         <button
-          className="rounded-full uppercase tracking-wide font-semibold bg-gray-100 text-gray-600 px-12 py-3"
+          className="rounded-full uppercase tracking-wide font-semibold text-sm lg:text-base bg-gray-100 text-gray-600 px-6 lg:px-12 py-1 lg:py-3"
           onClick={reset}
         >
           Clear
         </button>
       </div>
-      <div className="pt-32">
+      <div className="pt-16 lg:pt-32">
         <div className="flex flex-col items-center max-w-lg m-auto ">
-          <h1 className="text-6xl font-black text-black pb-2">
+          <h1 className="text-4xl lg:text-6xl pb-0 lg:pb-2 font-black text-black ">
             Stay Hydrated.
           </h1>
-          <p className="font-extrabold mb-8 text-blue-600 text-3xl">
+          <p className="text-2xl lg:text-3xl font-extrabold mb-4 lg:mb-8 text-blue-600 ">
             It's the key to staying healthy.
           </p>
 
