@@ -19,7 +19,7 @@ export const ProgressEncouragement: React.FC<ProgressEncouragementProps> = ({
   const keyMax = encouragements.length - 1
   const safeKey = key > keyMax ? keyMax : key
   return (
-    <div className="bg-gray-100 flex items-center mt-6 lg:mt-7 rounded-md justify-center w-full">
+    <div className="flex items-center mt-6 lg:mt-7 rounded-md justify-center w-full">
       <p className="text-sm lg:text-xl font-bold text-gray-900">
         {encouragements[safeKey]}
       </p>
